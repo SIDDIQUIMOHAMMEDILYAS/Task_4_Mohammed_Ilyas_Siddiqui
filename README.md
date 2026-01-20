@@ -1,10 +1,3 @@
-
-
-Here is the comprehensive `README.md` content for your **Mohammed Ilyas Portfolio Website**. You can copy this directly into a file named `README.md` in your project folder.
-
-***
-
-```markdown
 # Mohammed Ilyas | Creative Portfolio
 
 A modern, high-performance portfolio website featuring advanced **Glassmorphism** design, **3D Tilt interactions**, and fluid animations. Built with pure HTML, CSS, and JavaScript to demonstrate frontend mastery without relying on heavy frameworks.
