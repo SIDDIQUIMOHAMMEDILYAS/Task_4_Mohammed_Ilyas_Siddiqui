@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Ilyas | Creative Portfolio</title>
+    
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Background -->
+    <div class="bg-fx">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="glass" style="border-radius: 0; border: none; border-bottom: 1px solid var(--glass-border);">
+        <div class="logo">
+            <i class="fa-solid fa-shapes"></i> Mohammed Ilyas
+        </div>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-target="about">Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HOME PAGE -->
+        <section id="home" class="page-section active-page">
+            <div class="container hero">
+                <div class="hero-text">
+                    <h3 style="color: var(--primary); letter-spacing: 2px; margin-bottom: 10px;">WELCOME TO MY WORLD</h3>
+                    <h1>Hi, I'm <br><span class="typewriter" id="typewriter"></span></h1>
+                    <p>A creative developer based in the Cloud. I specialize in building immersive web experiences using modern animations and glassmorphism.</p>
+                    <button class="btn btn-primary" onclick="navigateTo('projects')">
+                        View My Work <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="btn" style="border: 1px solid var(--glass-border); color: blue; margin-left: 10px;" onclick="navigateTo('contact')">
+                        Contact Me
+                    </button>
+                </div>
+                <div class="hero-visual">
+                    <!-- Special 3D Tilt Card -->
+                    <div class="glass big-card tilt-card" id="heroCard">
+                        <div class="tilt-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                <i class="fa-brands fa-react fa-2x" style="color: #61dafb;"></i>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">STATUS: ONLINE</span>
+                            </div>
+                            <h2>Developer Portfolio</h2>
+                            <div class="code-block">
+                                <span class="code-line"><span class="code-keyword">const</span> developer = {</span>
+                                <span class="code-line">&nbsp;&nbsp;name: <span class="code-string">"Mohammed Ilyas"</span>,</span>
+                                <span class="code-line">&nbsp;&nbsp;skills: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>],</span>
+                                <span class="code-line">&nbsp;&nbsp;passion: <span class="code-keyword">true</span></span>
+                                <span class="code-line">};</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS PAGE -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem;">My <span style="color: var(--secondary);">Expertise</span></h2>
+                <div class="grid">
+                    <div class="glass skill-card tilt-card">
+                        <div class="tilt-content">
+                            <i class="fa-brands fa-html5 skill-icon"></i>
+                            <h3>Frontend Architecture</h3>
+                            <p>Crafting semantic HTML and complex layouts with CSS Grid and Flexbox.</p>
+                        </div>
+                    </div>
+                    <div class="glass skill-card tilt-card">
+                        <div class="tilt-content">
+                            <i class="fa-solid fa-wand-magic-sparkles skill-icon"></i>
+                            <h3>UI/UX Animations</h3>
+                            <p>Bringing interfaces to life with CSS Keyframes and JavaScript interactions.</p>
+                        </div>
+                    </div>
+                    <div class="glass skill-card tilt-card">
+                        <div class="tilt-content">
+                            <i class="fa-solid fa-server skill-icon"></i>
+                            <h3>Responsive Design</h3>
+                            <p>Ensuring perfect functionality across all devices, from mobile to 4K desktops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS PAGE -->
+        <section id="projects" class="page-section">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem;">Featured <span style="color: var(--primary);">Projects</span></h2>
+                <div class="grid">
+                    <div class="glass skill-card tilt-card">
+                        <img src="https://picsum.photos/seed/proj1/400/200" style="width:100%; border-radius: 10px; margin-bottom: 15px;" alt="Project 1">
+                        <div class="tilt-content">
+                            <h3>Glass Dashboard</h3>
+                            <p>A futuristic admin panel with real-time data visualization.</p>
+                        </div>
+                    </div>
+                    <div class="glass skill-card tilt-card">
+                        <img src="https://picsum.photos/seed/proj2/400/200" style="width:100%; border-radius: 10px; margin-bottom: 15px;" alt="Project 2">
+                        <div class="tilt-content">
+                            <h3>E-Commerce App</h3>
+                            <p>Full shopping experience with cart logic and payment integration.</p>
+                        </div>
+                    </div>
+                    <div class="glass skill-card tilt-card">
+                        <img src="https://picsum.photos/seed/proj3/400/200" style="width:100%; border-radius: 10px; margin-bottom: 15px;" alt="Project 3">
+                        <div class="tilt-content">
+                            <h3>Portfolio v1</h3>
+                            <p>My previous iteration focusing on minimalism and speed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2 style="text-align: center;">Let's <span style="color: var(--primary);">Collaborate</span></h2>
+                <div class="glass" style="padding: 3rem; margin-top: 2rem;">
+                    <div class="contact-layout">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <p style="margin-bottom: 2rem;">Have a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
+                            
+                            <div style="display: flex; gap: 15px; margin-bottom: 1.5rem; align-items: center;">
+                                <div style="background: var(--primary); padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <span>contact@mohammedilyas.dev</span>
+                            </div>
+                            
+                            <div style="display: flex; gap: 15px; align-items: center;">
+                                <div style="background: var(--secondary); padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <span>Dubai, UAE (Remote Available)</span>
+                            </div>
+                        </div>
+
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mohammed Ilyas. All Rights Reserved.</p>
+        <div style="margin-top: 10px; font-size: 1.2rem;">
+            <i class="fa-brands fa-github" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-linkedin" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-twitter" style="margin: 0 10px; cursor: pointer;"></i>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Message Sent Successfully!</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
